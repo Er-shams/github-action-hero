@@ -1,0 +1,25 @@
+{
+  "name": "github-action-hero",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fix:src": "eslint --fix src/*.js",
+    "fix:index": "eslint --fix index.js",
+    "fix:all": "concurrently --kill-others \"npm run fix:src\" \"npm run fix:index\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Er-shams//github-action-hero"
+  },
+  "keywords": [],
+  "author": "Er-shams",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.4.0",
+    "eslint": "^8.23.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  }
+}
